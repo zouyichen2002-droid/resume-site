@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>邹浥晨 | AI 应用开发</title>
+    <meta
+      name="description"
+      content="面向求职展示的个人主页，包含求职方向、个人信息、学历背景、实习经历、项目经历和技术栈。"
+    />
+    <meta property="og:title" content="邹浥晨 | AI 应用开发" />
+    <meta
+      property="og:description"
+      content="AI 应用开发方向的在线简历和项目展示主页。"
+    />
+    <meta property="og:type" content="website" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b7a75'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-size='24' font-family='Arial' font-weight='700' fill='white'%3ECV%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260703-longcard" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回顶部">
+        <span class="brand-mark">CV</span>
+        <span>在线简历</span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="#direction">方向</a>
+        <a href="#profile">信息</a>
+        <a href="#education">学历</a>
+        <a href="#internship">实习</a>
+        <a href="#projects">项目</a>
+        <a href="#skills">技术栈</a>
+      </nav>
+      <button class="icon-button" id="printResume" type="button" title="打印或保存 PDF">
+        <span aria-hidden="true">↓</span>
+        <span class="sr-only">打印或保存 PDF</span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="简历首页">
+        <img class="hero-image" src="assets/ai-agent-hero.png" alt="AI 应用开发工作台视觉图" />
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">2027 求职 · AI 应用开发</p>
+          <h1>邹浥晨</h1>
+          <p class="hero-subtitle">
+            东北大学（美国）电子与计算机工程硕士在读，本科毕业于厦门大学海洋技术专业。
+            课程背景覆盖机器学习、模式识别、移动机器人、数字信号处理、图像处理、传感与数据分析。
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#projects">查看项目经历</a>
+            <a class="secondary-action" href="mailto:zouyichen2012@outlook.com">联系我</a>
+          </div>
+          <dl class="hero-facts">
+            <div>
+              <dt>求职方向</dt>
+              <dd>AI 应用开发</dd>
+            </div>
+            <div>
+              <dt>到岗时间</dt>
+              <dd>2027 年夏季</dd>
+            </div>
+            <div>
+              <dt>当前状态</dt>
+              <dd>硕士在读</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section intro-section" id="direction" aria-label="求职方向">
+        <div class="section-heading">
+          <p class="eyebrow">Direction</p>
+          <h2>求职方向</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <span class="metric">01</span>
+            <h3>AI 应用开发</h3>
+            <p>围绕 LLM API、工具调用、Prompt 设计、工作流编排和应用落地，构建能被真实用户使用的小型产品。</p>
+          </article>
+          <article>
+            <span class="metric">02</span>
+            <h3>Agent / RAG 工程</h3>
+            <p>关注任务分解、检索增强、上下文管理、引用溯源、低置信拒答和执行链路观测。</p>
+          </article>
+          <article>
+            <span class="metric">03</span>
+            <h3>应用工程交付</h3>
+            <p>能从前端页面、后端 API、数据库、部署上线到日志排障推进完整闭环，为 AI 应用落地提供工程支撑。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section profile-section" id="profile" aria-label="个人信息">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Profile</p>
+            <h2>个人信息</h2>
+          </div>
+          <p class="section-note">联系方式已更新，GitHub、个人主页等链接后续可继续补充。</p>
+        </div>
+        <div class="profile-grid">
+          <div>
+            <span>姓名</span>
+            <strong>邹浥晨</strong>
+          </div>
+          <div>
+            <span>邮箱</span>
+            <strong>zouyichen2012@outlook.com</strong>
+          </div>
+          <div>
+            <span>电话</span>
+            <strong>（+86）18144163431</strong>
+          </div>
+          <div>
+            <span>微信</span>
+            <strong>zouyichen2012</strong>
+          </div>
+          <div>
+            <span>个人主页</span>
+            <strong>Cloudflare Pages 待上线</strong>
+          </div>
+          <div>
+            <span>当前状态</span>
+            <strong>东北大学（美国）硕士在读</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section two-column" id="education" aria-label="学历背景">
+        <div class="section-heading">
+          <p class="eyebrow">Education</p>
+          <h2>学历背景</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <time>2025.09 - 2027.06</time>
+            <div>
+              <h3>东北大学（美国） · 电子与计算机工程 · 硕士</h3>
+              <p>核心课程：机器学习和模式识别、移动机器人、应用概率与随机过程、图像处理和模式识别、数字信号处理、声学与传感。</p>
+              <div class="tags">
+                <span>Machine Learning</span>
+                <span>Robotics</span>
+                <span>Signal Processing</span>
+                <span>Sensing</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>2021.09 - 2025.06</time>
+            <div>
+              <h3>厦门大学 · 海洋技术 · 本科</h3>
+              <p>核心课程：数字电子电路、模拟电子电路、信号与系统、数字信号处理、C 程序设计、Python 数据分析、数据挖掘原理与实践。</p>
+              <div class="tags">
+                <span>Digital Circuits</span>
+                <span>Signals & Systems</span>
+                <span>Python</span>
+                <span>Data Mining</span>
+              </div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <time>学习重点</time>
+            <div>
+              <h3>AI 应用工程与云端部署</h3>
+              <p>结合电子与计算机工程、信号处理和数据分析背景，近期重点练习 AI 应用开发、Cloudflare Pages、Sealos、Vercel、Supabase / Neon 的组合使用。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="internship" aria-label="实习经历">
+        <div class="section-heading">
+          <p class="eyebrow">Internship</p>
+          <h2>实习经历</h2>
+        </div>
+        <div class="experience-list">
+          <article class="experience-card">
+            <div class="card-topline">
+              <span>清华大学 · 软件开发实习生</span>
+              <span>2024.08 - 2024.11</span>
+            </div>
+            <h3>新能源大数据平台 · 光伏数字孪生仿真系统</h3>
+            <ul>
+              <li>参与新能源大数据平台研发，独立负责光伏数字孪生仿真系统的软件架构设计与核心模块开发。</li>
+              <li>基于 pandas 设计数据解析引擎，实现日前级多维异构时序数据的秒级检索、对齐与切片。</li>
+              <li>利用 NumPy 编写矢量变换算子，通过矩阵运算将风向/风速解耦为二维 U、V 正交速度向量，并优化底层数据结构。</li>
+              <li>基于 Matplotlib 设计 10 通道数据帧驱动的异步/流式渲染管线，并利用 Tkinter 实现具备严格状态控制的交互状态机。</li>
+            </ul>
+            <div class="tags">
+              <span>Python</span>
+              <span>pandas</span>
+              <span>NumPy</span>
+              <span>Matplotlib</span>
+              <span>Tkinter</span>
+              <span>Digital Twin</span>
+            </div>
+          </article>
+
+          <article class="experience-card">
+            <div class="card-topline">
+              <span>北京捷通华声科技股份有限公司 · 数据工程师</span>
+              <span>2024.01 - 2024.02</span>
+            </div>
+            <h3>语音客服大模型“灵云” · Prompt 调优与微调数据建设</h3>
+            <ul>
+              <li>深度参与语音客服大模型“灵云”的 Prompt 调优与微调数据建设，面向智能客服语音交互场景优化数据质量。</li>
+              <li>针对口语化表达、断句频繁、语气词丰富等语音交互特点，设计文本对齐与结构化过滤管线。</li>
+              <li>构建并优化面向智能客服场景的 5 万条高质量多模态对话数据集，使生成文本更符合 TTS 的自然语感。</li>
+            </ul>
+            <div class="tags">
+              <span>Prompt Engineering</span>
+              <span>LLM Data</span>
+              <span>TTS</span>
+              <span>Data Cleaning</span>
+              <span>Dialogue Dataset</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section projects-section" id="projects" aria-label="项目经历">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Projects</p>
+            <h2>项目经历</h2>
+          </div>
+          <div class="project-tabs" role="tablist" aria-label="项目筛选">
+            <button class="tab is-active" type="button" data-filter="all">全部</button>
+            <button class="tab" type="button" data-filter="product">产品</button>
+            <button class="tab" type="button" data-filter="audio">音频</button>
+            <button class="tab" type="button" data-filter="research">研究</button>
+          </div>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-tags="product ai">
+            <div class="card-topline">
+              <span>Siren AI Product Line</span>
+              <span>进行中</span>
+            </div>
+            <h3>Siren AI 产品线研发</h3>
+            <p>与初创团队合作推进 AI 陪伴类产品线，聚焦语音体验、长期记忆、关系进度和 PWA 产品化交付。</p>
+            <ul>
+              <li>参与产品路线、竞品对标、MVP 边界和需求文档梳理，与合作伙伴共同推进 PL1 产品线。</li>
+              <li>围绕语音条、双向通话、角色记忆、关系等级、主动触达等核心体验拆解功能模块。</li>
+              <li>关注 PWA、PostgreSQL、Redis、对象存储、LLM 网关、语音服务和合规审计等工程边界。</li>
+            </ul>
+            <div class="tags">
+              <span>AI Product</span>
+              <span>PWA</span>
+              <span>LLM Gateway</span>
+              <span>Voice UX</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="audio product ai">
+            <div class="card-topline">
+              <span>Music Therapy App</span>
+              <span>进行中</span>
+            </div>
+            <h3>音疗项目</h3>
+            <p>面向情绪陪伴、放松辅助和声音日记场景，设计基于开源音乐生成模型的个性化音乐生成 Web/PWA。</p>
+            <ul>
+              <li>规划心情记录、音乐参数生成、ACE-Step 任务队列、音频库、播放反馈和用户画像闭环。</li>
+              <li>设计 Next.js、Postgres、对象存储、生成任务表和 Python Worker 的基础架构。</li>
+              <li>明确非医疗定位，使用“放松辅助、情绪陪伴、冥想氛围”等合规表达。</li>
+            </ul>
+            <div class="tags">
+              <span>ACE-Step</span>
+              <span>Next.js</span>
+              <span>Postgres</span>
+              <span>Sealos</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="audio product ai">
+            <div class="card-topline">
+              <span>Creator Workspace</span>
+              <span>进行中</span>
+            </div>
+            <h3>创作者项目</h3>
+            <p>面向 AI 歌曲创作工作流，设计 Suno prompt 工作台、歌词生成、封面描述和作品管理库。</p>
+            <ul>
+              <li>将灵感输入转化为歌名、歌词、风格 prompt、结构建议和封面描述等创作包。</li>
+              <li>规划作品库、prompt 版本、发布状态、单曲分享页和创作者资产管理流程。</li>
+              <li>采用手动 Suno 通道，不依赖非官方 API 或网页自动化，降低账号与合规风险。</li>
+            </ul>
+            <div class="tags">
+              <span>Suno Prompt</span>
+              <span>Lyrics</span>
+              <span>Asset Library</span>
+              <span>Workflow</span>
+            </div>
+          </article>
+
+          <article class="project-card" data-tags="audio research">
+            <div class="card-topline">
+              <span>Undergraduate Thesis</span>
+              <span>已完成 · 2025.05</span>
+            </div>
+            <h3>面向会议场景语音交互的麦阵自动增益控制</h3>
+            <p>本科毕业论文项目，构建融合空间声学信息与动态增益控制的麦克风阵列 AGC 系统。</p>
+            <ul>
+              <li>实现多通道信号预处理、MUSIC DOA 估计、波束形成、VAD 与 DOA 感知 VSSLMS-AGC。</li>
+              <li>使用 8 麦克风阵列录制多说话人与声源移动场景，并与 WebRTC AGC 进行对比分析。</li>
+              <li>实验中短时响度标准差降低 38%-42%，主观响度稳定性评分达到 3.95-4.23。</li>
+            </ul>
+            <div class="tags">
+              <span>MATLAB</span>
+              <span>Microphone Array</span>
+              <span>DOA</span>
+              <span>AGC</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills" aria-label="技术栈">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow">Skills</p>
+            <h2>技术栈</h2>
+          </div>
+          <p class="section-note">围绕 AI 应用从原型到上线的关键能力。</p>
+        </div>
+        <div class="skill-board">
+          <div>
+            <h3>AI / Agent</h3>
+            <p>LLM API, Prompt Engineering, Function Calling, Long-term Memory, Agent Workflow, Product Evaluation</p>
+          </div>
+          <div>
+            <h3>Audio / Signal</h3>
+            <p>Microphone Array, DOA Estimation, Beamforming, VAD, AGC, DSP, MATLAB, Audio Evaluation</p>
+          </div>
+          <div>
+            <h3>Data / Visualization</h3>
+            <p>Python, pandas, NumPy, Matplotlib, Tkinter, Time Series, CSV Processing, Interactive Visualization</p>
+          </div>
+          <div>
+            <h3>Product / Cloud</h3>
+            <p>PRD, MVP Planning, Competitor Research, Git, Docker, Cloudflare Pages, Sealos, Vercel, Logs</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-label="联系方式">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2>期待参与真实 AI 产品的构建。</h2>
+          <p>如果团队正在做 AI 应用、Agent 平台、知识库问答或智能工具产品，我希望参与把系统做得更稳定、更好用。</p>
+        </div>
+        <div class="contact-actions">
+          <a href="mailto:zouyichen2012@outlook.com">zouyichen2012@outlook.com</a>
+          <a href="tel:+8618144163431">（+86）18144163431</a>
+          <a href="#profile">微信：zouyichen2012</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
