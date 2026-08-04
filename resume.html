@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="邹浥晨的 AI 应用与 Agent 开发方向中文简历。"
+    />
+    <title>邹浥晨 | AI 应用 / Agent 开发简历</title>
+    <link rel="stylesheet" href="resume.css" />
+  </head>
+  <body>
+    <div class="screen-tools" aria-label="简历操作">
+      <a href="index.html">返回个人主页</a>
+      <button type="button" onclick="window.print()">打印 / 导出 PDF</button>
+    </div>
+
+    <main class="resume-page">
+      <header class="resume-header">
+        <div class="header-main">
+          <div class="identity-line">
+            <h1>邹浥晨</h1>
+            <p class="target">AI 应用开发 / Agent 开发</p>
+          </div>
+          <address class="contact-list">
+            <a href="tel:+8618144163431">(+86) 181 4416 3431</a>
+            <a href="mailto:zouyichen2012@outlook.com">zouyichen2012@outlook.com</a>
+            <span>微信：zouyichen2012</span>
+          </address>
+          <nav class="profile-links" aria-label="个人主页链接">
+            <a href="https://github.com/zouyichen2002-droid"><strong>GitHub</strong> · github.com/zouyichen2002-droid</a>
+            <a href="https://resume-site-c36.pages.dev/"><strong>Web 简历</strong> · resume-site-c36.pages.dev</a>
+          </nav>
+        </div>
+        <img class="profile-photo" src="assets/profile-photo.jpeg" alt="邹浥晨证件照" />
+      </header>
+
+      <section class="resume-section education-section" aria-labelledby="education-title">
+        <h2 id="education-title">教育背景</h2>
+        <div class="education-grid">
+          <article class="education-row">
+            <time>2025.09 - 2027.06</time>
+            <h3>美国东北大学（Northeastern University）</h3>
+            <p>电子与计算机工程 · 硕士</p>
+          </article>
+          <article class="education-row">
+            <time>2021.09 - 2025.06</time>
+            <h3>厦门大学</h3>
+            <p>海洋技术 · 本科</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="resume-section capability-section" aria-labelledby="capability-title">
+        <h2 id="capability-title">核心能力</h2>
+        <div class="capability-grid">
+          <p><strong>AI 应用全栈</strong><span>前端交互、实时后端、数据库与云端部署完整闭环</span></p>
+          <p><strong>Agent 工程</strong><span>结构化输出、状态机、幂等恢复与人工接管</span></p>
+          <p><strong>数据工程</strong><span>时序数据管线、多模态语料与可视化系统开发</span></p>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="internship-title">
+        <h2 id="internship-title">实习经历</h2>
+        <article class="resume-entry">
+          <div class="entry-heading">
+            <h3>清华大学信息国家研究中心 · 软件开发实习生</h3>
+            <time>2024.08 - 2024.11</time>
+          </div>
+          <ul>
+            <li>参与新能源大数据平台研发，独立负责光伏数字孪生仿真系统的软件架构设计与核心模块开发。</li>
+            <li>基于 pandas 设计数据解析引擎，实现日前级多维异构时序数据的秒级检索、对齐与切片；使用 NumPy 矩阵运算将风向、风速解耦为二维 U、V 正交速度向量。</li>
+            <li>基于 Matplotlib 搭建 10 通道数据帧驱动的异步/流式渲染管线，并使用 Tkinter 实现具备严格状态控制的交互状态机。</li>
+          </ul>
+        </article>
+        <article class="resume-entry">
+          <div class="entry-heading">
+            <h3>北京捷通华声科技股份有限公司 · 数据工程师</h3>
+            <time>2024.01 - 2024.02</time>
+          </div>
+          <ul>
+            <li>参与语音客服大模型“灵云”的 Prompt 调优与微调数据建设，面向智能客服语音交互场景优化数据质量。</li>
+            <li>针对口语化表达、断句频繁与语气词丰富等特点，设计文本对齐及结构化过滤管线，使生成文本更适配 TTS 的自然语感。</li>
+            <li>完成面向智能客服场景的 <strong>5 万条</strong>高质量多模态对话数据集构建与优化。</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="resume-section project-section" aria-labelledby="project-title">
+        <h2 id="project-title">项目经历</h2>
+
+        <article class="resume-entry project-entry">
+          <div class="entry-heading">
+            <h3>Siren AI · AI 互动叙事产品</h3>
+            <time>2026.05 - 至今</time>
+          </div>
+          <p class="role-line">独立负责 Siren 领域前后端与 AI 编排 · Next.js / React / TypeScript / Node.js / Socket.IO / PostgreSQL</p>
+          <ul>
+            <li>基于 Next.js 14、React 18 与 TypeScript 实现三角色内容包及流式对话主环，覆盖触摸热区、关系/兴奋度、反应媒体与语音反馈；另实现双缓冲互动视频引擎，支持分段预加载、限时分支、多结局、路线回顾和本地进度恢复。</li>
+            <li>在单 Node 进程整合 Next.js SSR/API、Express 与 Socket.IO，以统一鉴权和 Service 层约束数据访问，落地 8 个领域 API、8 个数据服务与 6 张独立 <code>siren_*</code> 业务表。</li>
+            <li>设计 Provider 无关的 AI 对话编排层，用 Zod 校验关系方向、情绪及边界动作等结构化决策；在 PostgreSQL 单事务与行锁中限幅结算权威关系、兴奋度和记忆，并加密持久化对白。</li>
+            <li>设计 clientSeq/serverSeq 幂等接受、有限重试、事件重放与权威对账，处理断线、重复提交、孤儿回合及中途停止；实现分级/同意/安全词门控、AES-256-GCM 与 HMAC 年龄校验，以 <strong>66 个相关测试文件</strong>覆盖核心路径，并完成 Docker 化、可观测性接入及 AWS ECS 蓝绿发布工作流。</li>
+          </ul>
+        </article>
+
+        <article class="resume-entry project-entry">
+          <div class="entry-heading">
+            <h3>Claude Bridge · 双端 Claude Code 任务桥接</h3>
+            <time>2026.07</time>
+          </div>
+          <p class="role-line">独立开发 · Python / Bash / Git / Claude Code CLI / JSON Task Protocol</p>
+          <ul>
+            <li>以私有 Git 仓库构建可追溯的任务/结果账本，定义携带 ID、Prompt、执行模式与状态的 JSON 协议；Bash 客户端通过 pull --rebase、commit、push 投递任务，并支持最近任务、指定 ID 与批量状态查询。</li>
+            <li>开发每 15 秒轮询的 Windows 常驻 Python Worker，在隔离工作目录调用 Claude Code CLI；实现 pending、running、done、failed、waiting_manual、waiting_confirm 六态状态机及 auto、manual、auto_confirm 三种模式。</li>
+            <li>对危险关键词、非零退出和 1800 秒超时转入人工确认，并处理 UTF-8 输出、Git 同步失败与持久化日志；完成 <strong>3 次跨端闭环验证</strong>：2 次自动任务成功生成文件并回传结果，1 次人工任务正确暂停等待远程处理。</li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section class="resume-section skills-section" aria-labelledby="skills-title">
+        <h2 id="skills-title">专业技能</h2>
+        <div class="skills-grid">
+          <p><strong>AI / Agent：</strong>LLM API、Prompt Engineering、结构化输出、状态机、人机接管、幂等恢复</p>
+          <p><strong>前端 / 后端：</strong>TypeScript、React、Next.js、Node.js、Express、Socket.IO、REST API</p>
+          <p><strong>数据 / 存储：</strong>Python、PostgreSQL、Drizzle ORM、Zod、pandas、NumPy、时序数据处理</p>
+          <p><strong>工程 / 云端：</strong>Git、Docker、AWS ECS、自动化测试、OpenTelemetry、Langfuse、Sentry</p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

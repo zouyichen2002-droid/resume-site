@@ -1,6 +1,5 @@
 const tabs = document.querySelectorAll(".tab");
 const cards = document.querySelectorAll(".project-card");
-const printButton = document.querySelector("#printResume");
 const navLinks = document.querySelectorAll(".nav a");
 const sections = [...navLinks]
   .map((link) => document.querySelector(link.getAttribute("href")))
@@ -22,8 +21,6 @@ tabs.forEach((tab) => {
     });
   });
 });
-
-printButton?.addEventListener("click", () => window.print());
 
 const observer = new IntersectionObserver(
   (entries) => {

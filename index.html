@@ -34,10 +34,10 @@
         <a href="#projects">项目</a>
         <a href="#skills">技术栈</a>
       </nav>
-      <button class="icon-button" id="printResume" type="button" title="打印或保存 PDF">
+      <a class="icon-button" href="output/pdf/zou-yichen-ai-agent-resume.pdf" download title="下载 A4 PDF 简历">
         <span aria-hidden="true">↓</span>
-        <span class="sr-only">打印或保存 PDF</span>
-      </button>
+        <span class="sr-only">下载 A4 PDF 简历</span>
+      </a>
     </header>
 
     <main id="top">
@@ -48,7 +48,7 @@
           <p class="eyebrow">2027 求职 · AI 应用开发</p>
           <h1>邹浥晨</h1>
           <p class="hero-subtitle">
-            东北大学（美国）电子与计算机工程硕士在读，本科毕业于厦门大学海洋技术专业。
+            美国东北大学（Northeastern University）电子与计算机工程硕士在读，本科毕业于厦门大学海洋技术专业。
             课程背景覆盖机器学习、模式识别、移动机器人、数字信号处理、图像处理、传感与数据分析。
           </p>
           <div class="hero-actions">
@@ -123,11 +123,11 @@
           </div>
           <div>
             <span>个人主页</span>
-            <strong>Cloudflare Pages 待上线</strong>
+            <strong><a href="https://resume-site-c36.pages.dev/" target="_blank" rel="noreferrer">resume-site-c36.pages.dev</a></strong>
           </div>
           <div>
             <span>当前状态</span>
-            <strong>东北大学（美国）硕士在读</strong>
+            <strong>美国东北大学硕士在读</strong>
           </div>
         </div>
       </section>
@@ -141,7 +141,7 @@
           <article class="timeline-item">
             <time>2025.09 - 2027.06</time>
             <div>
-              <h3>东北大学（美国） · 电子与计算机工程 · 硕士</h3>
+              <h3>美国东北大学（Northeastern University） · 电子与计算机工程 · 硕士</h3>
               <p>核心课程：机器学习和模式识别、移动机器人、应用概率与随机过程、图像处理和模式识别、数字信号处理、声学与传感。</p>
               <div class="tags">
                 <span>Machine Learning</span>
@@ -158,7 +158,7 @@
               <p>核心课程：数字电子电路、模拟电子电路、信号与系统、数字信号处理、C 程序设计、Python 数据分析、数据挖掘原理与实践。</p>
               <div class="tags">
                 <span>Digital Circuits</span>
-                <span>Signals & Systems</span>
+                <span>Signals &amp; Systems</span>
                 <span>Python</span>
                 <span>Data Mining</span>
               </div>
@@ -182,7 +182,7 @@
         <div class="experience-list">
           <article class="experience-card">
             <div class="card-topline">
-              <span>清华大学 · 软件开发实习生</span>
+              <span>清华大学信息国家研究中心 · 软件开发实习生</span>
               <span>2024.08 - 2024.11</span>
             </div>
             <h3>新能源大数据平台 · 光伏数字孪生仿真系统</h3>
@@ -232,6 +232,7 @@
           </div>
           <div class="project-tabs" role="tablist" aria-label="项目筛选">
             <button class="tab is-active" type="button" data-filter="all">全部</button>
+            <button class="tab" type="button" data-filter="agent">Agent</button>
             <button class="tab" type="button" data-filter="product">产品</button>
             <button class="tab" type="button" data-filter="audio">音频</button>
             <button class="tab" type="button" data-filter="research">研究</button>
@@ -239,83 +240,114 @@
         </div>
 
         <div class="project-grid">
-          <article class="project-card" data-tags="product ai">
+          <article class="project-card project-card--featured" data-tags="product ai">
             <div class="card-topline">
-              <span>Siren AI Product Line</span>
-              <span>进行中</span>
+              <span>前后端全栈工程师 · 独立负责 Siren 领域</span>
+              <span>2026.05 - 至今</span>
             </div>
-            <h3>Siren AI 产品线研发</h3>
-            <p>与初创团队合作推进 AI 陪伴类产品线，聚焦语音体验、长期记忆、关系进度和 PWA 产品化交付。</p>
+            <h3>Siren AI — AI 驱动的互动叙事产品</h3>
+            <p>在成熟 Web 全栈底座上独立负责 Siren 产品领域的前端、后端与 AI 编排，融合预生成媒体、LLM 对话与确定性状态机，已形成三角色互动主环并扩展互动视频分支体验。</p>
             <ul>
-              <li>参与产品路线、竞品对标、MVP 边界和需求文档梳理，与合作伙伴共同推进 PL1 产品线。</li>
-              <li>围绕语音条、双向通话、角色记忆、关系等级、主动触达等核心体验拆解功能模块。</li>
-              <li>关注 PWA、PostgreSQL、Redis、对象存储、LLM 网关、语音服务和合规审计等工程边界。</li>
+              <li>前端基于 Next.js 14、React 18 与 TypeScript 实现三角色内容包及流式对话主环，覆盖触摸热区、兴奋度/关系阶段、反应媒体、本地语音反馈与安全词交互。</li>
+              <li>实现配置驱动的双缓冲互动视频引擎，支持分段预加载、真假分支、选择倒计时、多结局、分支地图、本地进度恢复与路线回顾。</li>
+              <li>在单 Node 进程整合 Next.js SSR/API、Express REST 与 Socket.IO 实时广播，以统一鉴权和 Service 层约束数据访问，落地 8 个领域 API、8 个数据服务与 6 张独立 <code>siren_*</code> 业务表。</li>
+              <li>设计 Provider 无关的 AI 对话编排层，用 Zod 校验关系方向、情绪、边界动作与记忆候选；在 PostgreSQL 单事务与行锁中限幅结算权威关系、兴奋度和记忆，并加密持久化对白。</li>
+              <li>设计 clientSeq/serverSeq 幂等接受协议，结合有限重试、200 条事件缓存、5 分钟重放窗口、缺口检测与权威对账，处理断线、重复提交、孤儿回合及中途停止。</li>
+              <li>实现分级/权益/用户自设/同意/Provider/素材联合门控、AES-256-GCM 数据加密和 HMAC 年龄校验；66 个相关测试文件覆盖关键路径，并完成 Docker 化与 OpenTelemetry、Langfuse、Sentry 接入，搭建 AWS ECS 蓝绿发布工作流及 SIGTERM 优雅停机。</li>
             </ul>
             <div class="tags">
-              <span>AI Product</span>
-              <span>PWA</span>
-              <span>LLM Gateway</span>
-              <span>Voice UX</span>
+              <span>Next.js / React</span>
+              <span>TypeScript / Node.js</span>
+              <span>Express / Socket.IO</span>
+              <span>PostgreSQL / Drizzle</span>
+              <span>Vercel AI SDK / AWS ECS</span>
+            </div>
+          </article>
+
+          <article class="project-card project-card--featured" data-tags="agent product ai">
+            <div class="card-topline">
+              <span>独立开发 · 跨设备 Agent 自动化</span>
+              <span>MVP 已完成 · 2026.07</span>
+            </div>
+            <h3>Claude Bridge — 双端 Claude Code 任务桥接</h3>
+            <p>面向 Mac 与 Windows 双设备协作的异步 Agent 调度工具，以私有 Git 仓库作为可追溯的任务/结果账本，实现任务提交、远端执行、状态追踪、人工接管与结果回传闭环。</p>
+            <ul>
+              <li>设计携带任务 ID、Prompt、执行模式和状态的 JSON 协议；Bash 客户端通过 pull --rebase、commit、push 完成任务投递，并支持最近任务、指定 ID 与批量状态查询。</li>
+              <li>开发 Windows 常驻 Python Worker，以 15 秒周期拉取待处理任务，在隔离工作目录中调用 Claude Code CLI，并将退出状态、完成时间与执行输出写入同 ID 的结果文件后推回仓库。</li>
+              <li>构建 pending、running、done、failed、waiting_manual、waiting_confirm 六态状态机，提供 auto、manual、auto_confirm 三种模式；危险关键词、非零退出或 1800 秒超时可转入人工确认。</li>
+              <li>针对无人值守场景处理 UTF-8 子进程输出、Git 同步失败、Worker 异常与追加式持久化日志，单次任务失败不会中断后续轮询。</li>
+              <li>仓库保留 3 组真实任务/结果记录：2 次自动任务成功在 Windows 工作区生成文件并回传结果，1 次 manual 任务正确进入 waiting_manual 等待远程处理。</li>
+            </ul>
+            <div class="tags">
+              <span>Python / Claude Code CLI</span>
+              <span>Bash / Git</span>
+              <span>JSON Task Protocol</span>
+              <span>Cross-platform Automation</span>
             </div>
           </article>
 
           <article class="project-card" data-tags="audio product ai">
             <div class="card-topline">
-              <span>Music Therapy App</span>
-              <span>进行中</span>
+              <span>独立全栈开发</span>
+              <span>M0 + M1 已完成 · 2026.08</span>
             </div>
-            <h3>音疗项目</h3>
-            <p>面向情绪陪伴、放松辅助和声音日记场景，设计基于开源音乐生成模型的个性化音乐生成 Web/PWA。</p>
+            <h3>来处 · Origin Echoes</h3>
+            <p>有来源、有说明的个性化故事与音乐体验产品；已完成无需真实模型或 API Key 即可运行的 Mock Web 垂直闭环。</p>
             <ul>
-              <li>规划心情记录、音乐参数生成、ACE-Step 任务队列、音频库、播放反馈和用户画像闭环。</li>
-              <li>设计 Next.js、Postgres、对象存储、生成任务表和 Python Worker 的基础架构。</li>
-              <li>明确非医疗定位，使用“放松辅助、情绪陪伴、冥想氛围”等合规表达。</li>
+              <li>基于 Next.js 15、React 19 与 TypeScript 实现“心境输入 - 生成状态 - 双轨播放 - 文字稿 - 故事身份卡 - 反馈 - 删除”完整流程。</li>
+              <li>使用 Zod 建立 Source、Music、Intake 与 Experience 内容契约，编写版权准入校验，阻止待核验素材和测试 fixture 进入生产候选池。</li>
+              <li>实现会话归属校验、规则层安全分类、危机内容拦截和隐私删除；25 个单元测试与 4 个 Playwright E2E 全部通过，覆盖 390px 移动端无溢出。</li>
+              <li>完成类型检查、生产构建、Docker 镜像及 GitHub Actions 自动构建并推送 GHCR 的交付链路。</li>
             </ul>
             <div class="tags">
-              <span>ACE-Step</span>
-              <span>Next.js</span>
-              <span>Postgres</span>
-              <span>Sealos</span>
+              <span>Next.js 15 / React 19</span>
+              <span>TypeScript / Zod</span>
+              <span>Vitest / Playwright</span>
+              <span>Docker / GitHub Actions</span>
             </div>
           </article>
 
           <article class="project-card" data-tags="audio product ai">
             <div class="card-topline">
-              <span>Creator Workspace</span>
-              <span>进行中</span>
+              <span>独立开发 · 核心契约</span>
+              <span>Gate 1 已完成 · 2026.08</span>
             </div>
-            <h3>创作者项目</h3>
-            <p>面向 AI 歌曲创作工作流，设计 Suno prompt 工作台、歌词生成、封面描述和作品管理库。</p>
+            <h3>弦光纪 · Luminote</h3>
+            <p>面向 AI 音乐 PV 工作流的工程 PoC；已完成 SongSpec 时间真相源、MIDI 导入导出与自动化零漂移验证。</p>
             <ul>
-              <li>将灵感输入转化为歌名、歌词、风格 prompt、结构建议和封面描述等创作包。</li>
-              <li>规划作品库、prompt 版本、发布状态、单曲分享页和创作者资产管理流程。</li>
-              <li>采用手动 Suno 通道，不依赖非官方 API 或网页自动化，降低账号与合规风险。</li>
+              <li>使用 Pydantic 设计 SongSpec 领域契约，以整数 tick、固定 PPQ 480、拍号、音符和歌词片段统一旋律时间语义及校验规则。</li>
+              <li>实现 SMF Type 1 MIDI 双向转换，支持 Tempo/拍号/调性、UTF-8 中日文歌词、不同 PPQ 重采样及主旋律轨自动识别。</li>
+              <li>构建中、英、日三组黄金样例，共 109 个音符在 BPM 120/90/110 下往返最大 tick 漂移为 0；14 个契约测试全部通过。</li>
+              <li>搭建 FastAPI 健康检查与 Mock Provider 演示链路，3 个 API 测试和 Ruff 检查通过，为后续人声回传与 PV 渲染保留服务边界。</li>
             </ul>
             <div class="tags">
-              <span>Suno Prompt</span>
-              <span>Lyrics</span>
-              <span>Asset Library</span>
-              <span>Workflow</span>
+              <span>Python / FastAPI</span>
+              <span>Pydantic / SongSpec</span>
+              <span>MIDI / mido</span>
+              <span>Pytest / Ruff</span>
             </div>
           </article>
 
-          <article class="project-card" data-tags="audio research">
+          <article class="project-card project-card--featured" data-tags="audio research">
             <div class="card-topline">
-              <span>Undergraduate Thesis</span>
+              <span>本科毕业论文 · 独立研究与算法实现</span>
               <span>已完成 · 2025.05</span>
             </div>
             <h3>面向会议场景语音交互的麦阵自动增益控制</h3>
-            <p>本科毕业论文项目，构建融合空间声学信息与动态增益控制的麦克风阵列 AGC 系统。</p>
+            <p>针对会议场景中远近说话人、多人交替与声源移动造成的响度波动，设计融合空间声学定位、语音活动检测与动态增益控制的 8 通道麦克风阵列系统。</p>
             <ul>
-              <li>实现多通道信号预处理、MUSIC DOA 估计、波束形成、VAD 与 DOA 感知 VSSLMS-AGC。</li>
-              <li>使用 8 麦克风阵列录制多说话人与声源移动场景，并与 WebRTC AGC 进行对比分析。</li>
-              <li>实验中短时响度标准差降低 38%-42%，主观响度稳定性评分达到 3.95-4.23。</li>
+              <li>在 MATLAB 中完成端到端算法链路，实现 8 通道音频预处理、MUSIC 波达方向估计、波束形成、VAD 和增益控制，并统一各模块的数据接口与评价流程。</li>
+              <li>将 DOA 空间信息与 VAD 有效语音判定引入增益更新条件，使系统面向当前有效声源调整输出，降低多说话人切换和声源移动对增益估计的干扰。</li>
+              <li>设计 DOA 感知的 VSSLMS-AGC，利用变步长 LMS 根据误差动态调整收敛速度，在快速跟踪输入响度变化的同时抑制增益突变与听感泵动。</li>
+              <li>搭建 8 麦克风阵列实验系统，采集多说话人与声源移动场景，围绕响度稳定性、动态响应和主观听感与 WebRTC AGC 基线进行对比分析。</li>
+              <li>实验结果显示短时响度标准差降低 38%-42%，主观响度稳定性评分达到 3.95-4.23，验证空间信息辅助 AGC 在动态会议场景中的有效性。</li>
             </ul>
             <div class="tags">
-              <span>MATLAB</span>
-              <span>Microphone Array</span>
-              <span>DOA</span>
-              <span>AGC</span>
+              <span>MATLAB / Signal Processing</span>
+              <span>8-Mic Array</span>
+              <span>MUSIC DOA / Beamforming</span>
+              <span>VAD / VSSLMS-AGC</span>
+              <span>WebRTC AGC Evaluation</span>
             </div>
           </article>
         </div>
@@ -332,7 +364,7 @@
         <div class="skill-board">
           <div>
             <h3>AI / Agent</h3>
-            <p>LLM API, Prompt Engineering, Function Calling, Long-term Memory, Agent Workflow, Product Evaluation</p>
+            <p>LLM API, Prompt Engineering, Function Calling, Long-term Memory, Structured Output, State Machine, Human-in-the-loop, Idempotent Recovery</p>
           </div>
           <div>
             <h3>Audio / Signal</h3>
