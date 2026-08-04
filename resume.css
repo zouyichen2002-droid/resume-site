@@ -53,6 +53,10 @@ code {
   font: inherit;
 }
 
+.keyword-nowrap {
+  white-space: nowrap;
+}
+
 .screen-tools {
   position: sticky;
   top: 0;
