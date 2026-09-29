@@ -361,19 +361,22 @@
               <span>北京捷通数智科技有限公司 · 数据工程师</span>
               <span>2024.01 - 2024.02</span>
             </div>
-            <h3>“灵云”高铁智能客服大模型 · 后训练优化</h3>
+            <h3>灵云基座模型水务客服领域后训练｜SFT / DPO / Evaluation</h3>
             <ul>
-              <li>参与“灵云”高铁智能客服大模型后训练优化，面向购票咨询、退改签、候补购票、列车晚点和乘车规则等场景，协助构建从客服语料处理、SFT 微调、DPO 偏好优化到效果评测的训练流程。</li>
-              <li>参与高铁客服 FAQ、历史问答及业务规则语料的清洗、去重、脱敏、意图分类与指令改写，构建覆盖购票、退票、改签、学生票、儿童票、行李规定及异常行程等场景的 SFT 数据；基于 LoRA 开展监督微调，并对学习率、Batch Size、LoRA Rank 等参数进行实验对比。</li>
-              <li>参与构建客服回答偏好数据，依据回答准确性、业务规则一致性、完整性和表达规范开展 DPO 训练；编写任务准确率、规则遵循率、格式合规率及正确拒答率等评测脚本，并结合人工评测分析 Bad Case。</li>
-              <li>累计参与构建 2 万+ 条高质量 SFT 及偏好训练样本，支持模型第二轮数据迭代；在自建评测集上，核心任务准确率较基线提升约 12 个百分点。</li>
+              <li><strong>背景与目标：</strong>捷通华声基于“灵云”通用基座模型承接水务客服业务；针对原始模型在水费账单解释、缴费异常、欠费停复水、水表异常及边界业务规则等场景中的领域知识覆盖、规则遵循与客服表达问题，通过领域 SFT、偏好优化与专项评测提升任务准确性和业务一致性。</li>
+              <li><strong>领域数据构建：</strong>参与处理 3 万+ 条 FAQ、历史客服问答及业务规则语料，完成清洗、脱敏、语义去重、意图分类和 instruction 改写；构建 2 万+ 条高质量 SFT 样本，覆盖水费查询、缴费异常、欠费、停复水、水表、账单争议、水站业务等 10+ 一级意图 / 30+ 细分场景，并按训练、验证、测试集合完成数据隔离，降低重复问法与评测泄漏。</li>
+              <li><strong>SFT 微调：</strong>基于 LoRA 对“灵云”基座模型开展水务领域监督微调，围绕 Learning Rate、Batch Size、LoRA Rank、Epoch 等参数设计多组对照实验；增加业务规则问答、同义问法、复杂条件组合及标准话术样本，提高模型对领域术语、业务边界和指令格式的适配能力。</li>
+              <li><strong>DPO 偏好优化：</strong>基于 SFT 模型输出及人工评估构建数千组 Chosen / Rejected Preference Pair，围绕事实正确性、规则一致性、信息完整度、客服表达规范及拒答合理性设计偏好标准，通过 DPO 优化答非所问、规则冲突、表达冗余及异常拒答等问题。</li>
+              <li><strong>Evaluation &amp; Bad Case：</strong>自建 1000+ 条水务客服专项评测集，覆盖常规咨询、复杂账单、异常缴费、边界规则、知识外问题等场景；编写自动评测脚本，统一评估任务准确率、规则遵循率、格式合规率及正确拒答率，并结合人工评审定位 Knowledge Gap、Rule Conflict、Intent Error、Over-refusal 等失败类型。</li>
+              <li><strong>数据闭环：</strong>根据评测 Bad Case 对失败样本进行聚类和归因，针对长尾规则与高频错误补充数千条专项 SFT / Preference 数据并完成第二轮训练迭代，实现 Data → SFT → DPO → Eval → Bad Case → Data 的后训练闭环。</li>
+              <li><strong>项目结果：</strong>在自建水务客服评测集上，模型核心任务准确率较基线提升约 12 个百分点，并在业务规则遵循、客服格式一致性及异常场景处理方面取得进一步改善。</li>
             </ul>
             <div class="tags">
               <span>SFT / LoRA</span>
               <span>DPO</span>
-              <span>Data Curation</span>
               <span>LLM Evaluation</span>
-              <span>Customer Service AI</span>
+              <span>Data Flywheel</span>
+              <span>Water Utility AI</span>
             </div>
           </article>
         </div>
