@@ -341,18 +341,21 @@
               <span>清华大学北京信息科学与技术国家研究中心 · 大数据开发实习生</span>
               <span>2024.08 - 2024.11</span>
             </div>
-            <h3>气象与光伏大数据可视化及预测</h3>
+            <h3>气象与光伏异构时序数据分析及可视化｜ETL / 时序分析 / Streaming Rendering</h3>
             <ul>
-              <li>在曹军威教授指导下参与气象/光伏分析与预测，设计异构时序数据 ETL，覆盖解析、索引检索、时间戳对齐、滑动窗口切片与 NumPy 向量化转换。</li>
-              <li>统一数据清洗、标准化特征组织和可复用分析流程，为预测建模、实验复现与多源数据交叉验证提供标准输入。</li>
-              <li>参与交互式大气数据可视化程序设计，构建 Multi-channel Streaming Rendering、状态同步与交互控制链路。</li>
+              <li><strong>背景与目标：</strong>在曹军威教授指导下参与气象与光伏分析预测研究；针对气象观测、光伏功率等多源时序数据存在文件格式异构、采样频率不一致、时间戳错位及数据规模较大等问题，参与构建统一的数据处理、分析与可视化链路，为后续预测建模及多源数据交叉验证提供标准化数据基础。</li>
+              <li><strong>异构时序 ETL：</strong>参与设计多源气象 / 光伏数据 ETL Pipeline，完成原始数据解析、字段映射、时间索引构建、缺失 / 异常数据清洗与时间戳对齐；基于滑动窗口完成连续时序样本切片，并将处理结果统一转换为 NumPy Array / Tensor-compatible 数据结构，降低不同数据源接入预测模型时的适配成本。</li>
+              <li><strong>时序数据处理：</strong>对温度、湿度、辐照度、风速及光伏功率等多维特征进行统一组织与标准化，封装可复用的数据加载、时间范围查询、窗口切片及特征转换流程；支持不同时间区间、窗口长度及特征组合的快速实验，减少重复的数据预处理工作并提升实验复现一致性。</li>
+              <li><strong>性能优化：</strong>针对大规模连续时序数据处理中逐点计算开销较高的问题，将部分 Python 循环重构为 NumPy Vectorization / Batch Processing，减少数据转换与窗口构造过程中的重复计算，为后续批量预测与交叉验证提供高效输入。</li>
+              <li><strong>交互式可视化：</strong>参与设计大气数据交互式可视化程序；针对多变量、长时间序列同时展示的需求，构建 Multi-channel Streaming Rendering 链路，对不同气象通道进行分批加载与增量渲染，并设计时间轴、通道选择、缩放等交互状态的同步机制，保证数据查询、渲染状态与用户操作之间的一致性。</li>
+              <li><strong>项目产出：</strong>形成 Raw Data → ETL → Time Alignment → Windowing → Feature Processing → Analysis / Prediction → Visualization 的统一处理链路，为气象 / 光伏预测实验、结果复现及多源数据对比分析提供可复用的数据基础设施。</li>
             </ul>
             <div class="tags">
-              <span>Python</span>
+              <span>ETL Pipeline</span>
               <span>Time-Series Analytics</span>
-              <span>Data Pipeline</span>
-              <span>Machine Learning</span>
-              <span>Interactive Visualization</span>
+              <span>NumPy Vectorization</span>
+              <span>Batch Processing</span>
+              <span>Streaming Rendering</span>
             </div>
           </article>
 
