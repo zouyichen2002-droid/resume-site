@@ -302,6 +302,7 @@ dd {
 .intro-grid p,
 .project-card p,
 .project-card li,
+.experience-card p,
 .experience-card li,
 .timeline-item p,
 .skill-board p,
@@ -432,7 +433,8 @@ dd {
   text-underline-offset: 3px;
 }
 
-.project-card .project-proof {
+.project-card .project-proof,
+.experience-card .project-proof {
   margin: 14px 0 0;
   padding: 12px 14px;
   color: #31575c;
