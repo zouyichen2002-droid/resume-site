@@ -317,22 +317,23 @@
               <span>CyberEros-AI · 兼职核心成员</span>
               <span>2026.05 - 至今</span>
             </div>
-            <h3>CyberEros — 跨端 AI 伴侣与 Agent Workspace</h3>
+            <h3>AI 女友「林晚」核心研发｜Memory &amp; Context / Real-time Voice / Async Workflow</h3>
             <a class="project-repo-link" href="https://github.com/CyberEros-AI/cybereros" target="_blank" rel="noreferrer">组织仓库（需权限） · github.com/CyberEros-AI/cybereros</a>
-            <p class="project-proof"><strong>个人交付：</strong>GitHub 当前可核验 12 个合并 PR；最新主分支 CI 通过。</p>
-            <p>负责从采集、VAD / 回合切分、ASR、Mistral 对话、情绪 TTS 到共享播放的端到端语音链路，并在 Web、Electron、Go 服务和 TypeScript 音频包之间完成跨端联调。</p>
             <ul>
-              <li>在 Go 服务层抽象语音、转写与对话 Gateway，接入 Mistral 对话 / 转写、BytePlus Seed ASR 2.0 与情绪 TTS，并保留 Provider 切换和配置边界。</li>
-              <li>建立浏览器 / 桌面音频采集、VAD、回合服务与事件契约；实现 K-weighting、响度、True Peak、Limiter、空间声场等 TypeScript DSP 模块及测试。</li>
-              <li>修复跨端实时交互缺陷：播放段间卡顿、采集尾音截断（停止后保留 400 ms）、场景状态竞态、dB 表、语音回合去重与失败可见性。</li>
-              <li>补齐鉴权与本地登录错误、超过 100 条的会话分页、ASR 出口区域提示等可用性问题，降低“后端成功但用户无反馈”的静默失败。</li>
+              <li><strong>项目架构：</strong>参与 AI 女友产品「林晚」的核心研发，产品支持文字聊天、语音交互、互动内容及 Agent 场景，目标是让同一角色在不同交互形态下持续保持统一的人格、关系状态与长期记忆。本人主要参与 Memory &amp; Context、Real-time Voice、Async Workflow 三条核心链路的研发与问题定位，并在与核心研发成员协作过程中深入理解 Conversation、Runtime Context、Proactive Behavior、Interactive Content 等模块之间的整体协同关系。</li>
+              <li><strong>Memory &amp; Context Engineering：</strong>参与长期记忆与上下文链路建设，打通 Conversation → Outbox → Memory Event → LLM Extraction → Assertion / Entity / Episode / Observation / Dossier 的异步记忆沉淀流程；读取侧根据 Recall Plan 执行 Pinned / Lexical / Semantic / Entity / Temporal 等多路召回，并设置 1.2s Semantic Recall Deadline 与降级路径，避免语义检索尾延迟阻塞实时对话。</li>
+              <li><strong>Context Assembly &amp; Grounding：</strong>参与模型上下文组装与预算策略优化，将 Identity、Recent Messages、Relationship State、Observation、Episode、Assertion 等不同生命周期信息分层组织，并通过 Recall Receipt / Context Receipt 跟踪“召回 → 组装 → 模型输入”链路；结合 Evidence Pool 与 Grounding Guard 约束共同经历及用户事实类生成，降低无证据补全。</li>
+              <li><strong>Real-time Voice Pipeline：</strong>参与语音交互链路流式化改造，将原有停口后的串行处理优化为 PCM Streaming Upload → Streaming ASR → LLM Token Stream → Sentence Segmentation → Streaming TTS → SSE Chunk Delivery → Incremental Playback，将用户停口后端到端首声延迟由 5.34s 降至 3.04s，其中转写阶段由 2.03s 降至 541ms。</li>
+              <li><strong>Streaming Audio Engineering：</strong>参与 HTTP/2 流式上传、Multipart 顺序解析、ASR 流式降级、TTS 分句与客户端增量播放等关键链路；针对 MP3 分片独立解码产生的帧间依赖问题，采用累积解码 + Tail Extraction，将异常采样点比例由 11.62% 降至 0.008%，8 个音频分片累计解码耗时约 23ms。</li>
+              <li><strong>Async Workflow &amp; Reliability：</strong>参与异步任务链路建设，将 Memory Extraction、Embedding、Observation、Prospective Memory、Runtime Context 与 Proactive Behavior 等非实时任务从同步对话中解耦；围绕 Transactional Outbox、Worker 并发认领、Lease、Retry、Dead Letter、Workflow Timeout 等机制处理任务一致性、失败恢复及外部依赖异常。</li>
+              <li><strong>Observability &amp; Diagnosis：</strong>参与完善 Conversation / Voice Pipeline 的端到端可观测性，结合 <code>memory_recall_ms</code>、<code>model_first_delta_ms</code>、<code>first_audio_ms</code>、<code>total_ms</code>、Recall Receipt 与结构化日志定位跨层问题；实际排查过 Memory Worker 静默停转、Context Budget 超限、Temporal Activity Timeout 等问题。</li>
             </ul>
             <div class="tags">
-              <span>Go / TypeScript</span>
-              <span>ASR / Emotional TTS</span>
-              <span>VAD / Audio DSP</span>
-              <span>Next.js / Electron</span>
-              <span>12 Merged PRs</span>
+              <span>Memory &amp; Context</span>
+              <span>Real-time Voice</span>
+              <span>Async Workflow</span>
+              <span>Streaming Audio</span>
+              <span>Observability</span>
             </div>
           </article>
 

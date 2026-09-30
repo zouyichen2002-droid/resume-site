@@ -444,7 +444,8 @@ dd {
   font-size: 0.9rem;
 }
 
-.project-card code {
+.project-card code,
+.experience-card code {
   padding: 0.08em 0.3em;
   color: #31575c;
   background: rgba(47, 111, 159, 0.08);
