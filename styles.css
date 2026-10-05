@@ -559,6 +559,17 @@ dd {
   font-weight: 760;
 }
 
+.timeline-item .coursework {
+  margin: 10px 0 0;
+  color: #53636d;
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.timeline-item .coursework strong {
+  color: var(--ink);
+}
+
 .skills-section {
   background: #fbfcf9;
 }
