@@ -1,26 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
       content="邹浥晨 · AI Agent / AI 应用开发工程师。企业销售 Agent、个人创作工作台、对话记忆后端与 SFT/DPO 数据工程。"
->
-    <meta property="og:title" content="邹浥晨 | AI Agent / AI 应用开发工程师">
+    />
+    <meta property="og:title" content="邹浥晨 | AI Agent / AI 应用开发工程师" />
     <meta
       property="og:description"
-      content="以上下文、工具、状态与评估，构建可以交付的 AI 应用。"
->
-    <meta property="og:type" content="website">
-    <meta name="theme-color" content="#173e35">
+      content="东北大学 ECE 硕士，2027 届。聚焦 AI 应用开发、Agent Harness、上下文与记忆、可靠任务执行及评估迭代。"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#173e35" />
     <title>邹浥晨 | AI Agent / AI 应用开发工程师</title>
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23173e35'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='26' font-family='Arial' font-weight='700' fill='%23fff'%3EZY%3C/text%3E%3C/svg%3E"
->
-    <link rel="stylesheet" href="styles.css?v=20261013-authority">
-    <script src="script.js?v=20261013-authority" defer></script>
+    />
+    <link rel="stylesheet" href="styles.css?v=20261013-rewrite" />
+    <script src="script.js?v=20261013-rewrite" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">跳至简历正文</a>
@@ -46,11 +46,13 @@
           </p>
           <h1 id="hero-title">邹浥晨<span class="name-en">Yichen Zou</span></h1>
           <p class="hero-statement">
-            把模型能力，<br>接进<span>可交付的工作流。</span>
+            AI 应用开发<br /><span>Agent Harness 与后端工程</span>
           </p>
           <p class="hero-description">
-            聚焦 Agent
-            Harness、上下文与记忆、后端可靠性和评估迭代。通过企业销售协作、虚拟歌手创作与对话产品，把模型输入、工具执行、业务状态和结果验证连接起来。
+            美国东北大学电子与计算机工程硕士在读，预计 2027 年毕业。
+            负责企业销售 Agent 的技术实现，独立开发虚拟歌手创作工作台，并参与 AI
+            伴侣产品的记忆与对话后端研发。
+            工程重点是为模型提供有效上下文、约束工具执行、维护业务状态，并通过评估与问题定位持续改进结果。
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects"
@@ -76,37 +78,41 @@
               width="72"
               height="96"
               alt="邹浥晨证件照"
->
+            />
           </div>
-          <p class="panel-title">从请求到结果。<br>每一步都可以解释。</p>
+          <p class="panel-title">关注模型调用前后，<br />应用如何可靠运行。</p>
           <ol class="engineering-loop">
             <li>
               <span class="loop-number">01</span>
               <div>
-                <strong>Context</strong><span>来源、记忆与输入预算</span>
+                <strong>上下文与记忆</strong
+                ><span>选择证据，承接历史，控制输入</span>
               </div>
             </li>
             <li>
               <span class="loop-number">02</span>
               <div>
-                <strong>Execution</strong><span>受约束工具与后台任务</span>
+                <strong>工具与工作流</strong
+                ><span>参数校验，后台执行，人工交接</span>
               </div>
             </li>
             <li>
               <span class="loop-number">03</span>
               <div>
-                <strong>State</strong><span>持久化、版本与失败恢复</span>
+                <strong>状态与可靠性</strong
+                ><span>持久化，幂等恢复，版本保护</span>
               </div>
             </li>
             <li>
               <span class="loop-number">04</span>
               <div>
-                <strong>Evaluation</strong><span>检查、归因与回归验证</span>
+                <strong>评估与迭代</strong
+                ><span>固定输入，定位错因，验证修复</span>
               </div>
             </li>
           </ol>
           <div class="panel-footer">
-            <span>Go / Python / JavaScript</span><span>Agent Harness</span>
+            <span>Python / Node.js / Go</span><span>AI APPLICATIONS</span>
           </div>
         </aside>
       </section>
@@ -147,9 +153,9 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">01 / PROJECTS</p>
-            <h2 id="projects-title">从业务需求到工程交付</h2>
+            <h2 id="projects-title">项目经历</h2>
           </div>
-          <p>两个项目，两种运行场景。<br>共同关注上下文、执行和验证。</p>
+          <p>企业销售协作与个人创作，<br />围绕实际使用需求设计 Agent。</p>
         </div>
         <article class="case" id="vvsignal" aria-labelledby="vvsignal-title">
           <header class="case-header">
@@ -159,7 +165,7 @@
                 ><span class="badge">单机试用 · 持续开发</span>
               </div>
               <h3 id="vvsignal-title">
-                VVSignal<span>企业销售 Agent Harness</span>
+                VVSignal<span>小红书线索发现与销售协作 Agent</span>
               </h3>
               <p class="role">技术实现负责人 <span>2026.01 - 至今</span></p>
             </div>
@@ -172,10 +178,9 @@
             >
           </header>
           <p class="case-intro">
-            面向小红书护肤品评论的线索发现与销售协作。AI
-            判断购买需求和商品匹配，真人在官方 App
-            联系并反馈；本人负责技术实现，合作方提供账号、撰写 PRD、参与验证及
-            Skill 等技术内容。
+            面向护肤品经销商与小型销售团队，从小红书公开评论中识别购买需求，结合商品事实筛选可跟进线索，交由销售认领、联系并反馈。
+            本人负责技术实现，建设 Python Agent Harness、Go 控制后端和 React
+            工作台；合作方负责账号、PRD、业务验证及部分 Skill 内容。
           </p>
           <div class="tech-tags">
             <span>Go</span><span>Python</span><span>PostgreSQL</span
@@ -189,63 +194,59 @@
             <li>线索交接</li>
             <li>真人认领与反馈</li>
           </ol>
-          <div class="contributions">
-            <div>
-              <span class="item-number">01</span>
-              <h4>Harness 与受约束判断</h4>
-              <p>
-                从 Go 快照组装评论、上级语境与有效商品事实，固定 Skill
-                版本和只读工具；用 Pydantic / JSON
-                Schema、证据引用校验和最多两次修复约束候选，按真实尝试管理预算与停止条件。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">02</span>
-              <h4>持久编排与结果复用</h4>
-              <p>
-                以 Temporal 承接事务 Outbox 事件，通过提交心跳检查点、Go
-                幂等响应查询及判断 ID
-                复用已落库结果。新模式保留旧工作流历史的缺省行为，支持历史重放验证。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">03</span>
-              <h4>业务状态与人工协作</h4>
-              <p>
-                由 Go / PostgreSQL
-                保存权威状态，联动合格线索交接、事务内原子认领、额度统计与明确拒绝反馈。关闭起草时，同时约束候选、批准和执行前检查入口。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">04</span>
-              <h4>一致性与故障处理</h4>
-              <p>
-                用事务与 savepoint 处理回复判断和机会挂接，用共享 /
-                独占锁处理节点隔离竞态；可选起草模式以版本绑定、租约 / epoch 和
-                unknown 账本管理动作，结果未知时先核对。
-              </p>
-            </div>
+          <ul class="resume-points" aria-label="VVSignal 主要工作">
+            <li>
+              <strong>Agent Harness 与上下文：</strong
+              >将机会登记与资格判断拆为独立任务，后者结合需求与商品匹配进行判断；从后端读取当前评论、上级语境与有效商品事实，按固定
+              Skill
+              版本组装只读上下文。限制实际绑定的工具集合，并校验证据归属，避免把上级评论或商品资料误当作当前用户的需求证据。
+            </li>
+            <li>
+              <strong>输出约束与失败控制：</strong>结合 Pydantic / JSON
+              Schema、引用与事实版本检查验证模型候选；用 LangGraph
+              执行“生成—校验—反馈修复”，最多修复两次，仍不合格则停止提交。按实际尝试预留与结算模型预算，记录版本、耗时、费用和拒绝原因。
+            </li>
+            <li>
+              <strong>持久编排与提交恢复：</strong>以事务 Outbox 连接 Go
+              业务状态和 Temporal
+              工作流；候选提交后记录心跳检查点，重试时查询幂等响应或派生判断
+              ID，复用已落库结果。新增流程分支保留旧历史的缺省行为，避免部署升级改变工作流重放路径。
+            </li>
+            <li>
+              <strong>销售协作与状态一致性：</strong
+              >实现合格线索直接交接、事务内原子认领与追加式反馈；将“明确拒绝”反馈联动到营销限制和机会关闭。默认关闭
+              AI
+              起草时，同步约束候选生成、旧草稿批准及执行前检查，并调整交接额度的统计口径。
+            </li>
+            <li>
+              <strong>后端可靠性与试用部署：</strong>以 savepoint
+              处理回复判断成功但机会挂接被业务规则拒绝的情况，用共享 /
+              独占锁处理节点隔离与在途领取竞争；建设独立评论导入服务、Compose
+              单机试用及运行记录查询，支持从评论来源追踪到模型判断和销售反馈。
+            </li>
+            <li>
+              <strong>评测驱动迭代：</strong
+              >从真实评论中定位“分享使用体验被误判为需求”“同问缺少上级语境”等问题，迭代上下文和
+              Skill；分别验证模型候选质量、后端状态流转与人工工作台流程。
+            </li>
+          </ul>
+          <div class="outcome">
+            <p class="mini-label">阶段结果</p>
+            <p>
+              形成可运行的单机试用系统。发布与复盘记录覆盖
+              <strong>99 个合成用例的 DeepSeek 评测</strong>、<strong
+                >49 条真实评论的只读分析</strong
+              >；另以 4 条合成评论验证了 2 条线索交接、0
+              条草稿，以及认领后的测试拒绝反馈。
+            </p>
+            <p class="outcome-note">
+              截至
+              2026-10-13：合成标签尚待人工复核；已验证应用流程，真实客户联系与销售效果仍待试点。
+            </p>
           </div>
-          <div class="result-strip">
-            <div>
-              <strong>99 <small>个</small></strong
-              ><span>DeepSeek 合成评测用例</span>
-            </div>
-            <div>
-              <strong>49 <small>条</small></strong
-              ><span>小红书真实评论只读分析</span>
-            </div>
-            <div>
-              <strong>4 → 2</strong><span>合成评论 → 交接线索，0 草稿</span>
-            </div>
-          </div>
-          <p class="evidence-note">
-            结果来自 2026-10-13 发布与复盘记录。99 个用例尚待人工复核；4
-            条评论的交接与反馈属于试用环境测试。真实销售联系和经营闭环待验证。
-          </p>
           <details class="case-detail">
             <summary>
-              <span>展开架构分工、评测与迭代案例</span
+              <span>技术展开 · 已提交结果恢复、需求误判与业务模式切换</span
               ><span class="detail-symbol" aria-hidden="true">+</span>
             </summary>
             <div class="detail-body">
@@ -315,24 +316,50 @@
               <div class="case-stories">
                 <div>
                   <p class="mini-label">上下文迭代</p>
-                  <h4>“同问”需要上级评论</h4>
+                  <h4>理解“同问”，同时保留证据归属</h4>
                   <p>
-                    将 parent / parents
-                    加入只读快照，分离当前作者的需求与上级语境；资格证据仍只能引用当前机会信号。针对商品使用分享被误判为购买需求，修订登记与资格
-                    Skill。
+                    单独读取短评论会漏掉需求语境，而将父评论当作当前用户的陈述又会造成误判。
+                    在 Go 快照中加入 parent /
+                    parents，提供上级语境，资格证据仍限定在当前机会信号。 同批
+                    49 条真实评论经 Skill 调整后，登记机会由 13 条变为 10
+                    条：移除 5 条、新增 2 条追问，其中边界需求仍由业务方复核。
                   </p>
                 </div>
                 <div>
                   <p class="mini-label">状态联动</p>
-                  <h4>只找线索，要同步改整条控制链</h4>
+                  <h4>默认只找线索，旧草稿也要受新状态约束</h4>
                   <p>
-                    除了停止模型起草，还需拒绝旧草稿批准、在执行前复验配置，并更新交接计数和拒绝营销状态。试用走查验证交接后认领、测试拒绝反馈及机会关闭。
+                    跳过起草调用后，旧草稿仍可能从批准入口触发后续动作。 因此在
+                    Propose、Approve
+                    与执行前复验三处检查当前配置，并同步交接计数和拒绝反馈。
+                    试用环境以合成评论走查“导入—判断—交接—认领—明确拒绝”，验证机会关闭与营销限制联动。
+                  </p>
+                </div>
+                <div>
+                  <p class="mini-label">幂等恢复</p>
+                  <h4>写入已成功，响应丢失后先查询</h4>
+                  <p>
+                    候选已写入 Go，但 worker
+                    未收到响应或后续记录失败时，直接重跑会重复生成。提交检查点、后端幂等响应和
+                    assessment_id
+                    用于识别这次执行已经完成的写入，再补齐收尾。结果尚未持久化的崩溃窗口仍可能再次调用模型，业务写入幂等与模型调用计费分别管理。
+                  </p>
+                </div>
+                <div>
+                  <p class="mini-label">模型诊断</p>
+                  <h4>先检查实际输入，再判断模型能力</h4>
+                  <p>
+                    本机模型出现忽略
+                    Skill、错引证据及无依据数字时，排查发现实际上下文窗口只有
+                    4,096，导致说明被截断；调整为 16,384
+                    的配置后继续回归。保留失败样本与引用校验，按具体模型及配置决定是否进入试点。
                   </p>
                 </div>
               </div>
               <p class="scope-note">
-                当前具备 Compose 单机试用、隔离导入服务及 mTLS / SPIRE
-                配置。真实企业登录和集群部署待验收；交接总额度仍有并发竞争窗口，受阻线索的自动重检尚未覆盖全部条件。
+                运行范围：单机试用，AI 筛选线索，真人在官方 App
+                联系。可选起草模式保留人工审批、版本绑定及未知发送结果账本。
+                当前仍需完善交接总额度的并发控制与受阻线索自动重检；企业登录和真实集群部署尚待验收。
               </p>
             </div>
           </details>
@@ -346,7 +373,7 @@
               </div>
               <h3 id="sv-title">SV-Agent<span>个人虚拟歌手创作工作台</span></h3>
               <p class="role">
-                独立开发 · 需求 / 架构 / 插件 / Worker / 评估
+                个人项目 · 独立设计与开发
                 <span>2026.03 - 2026.09</span>
               </p>
             </div>
@@ -359,10 +386,10 @@
             >
           </header>
           <p class="case-intro">
-            基于 DeepSeek
-            Harness（DSH）扩展创作领域，让原曲、歌词与反馈进入可追踪的翻唱和歌词视频工作流，交付可编辑
-            SynthV
-            工程、视频及剪映草稿。本人完成项目设计、开发、调试与评估，也参与试听、工程修改和作品验收。
+            源于个人虚拟歌手创作需求：将原曲和歌词转为可继续调教的 SynthV
+            工程，再用人工修订工程与混音制作歌词视频。 基于 DeepSeek
+            Harness（DSH）开发领域插件与 Python
+            Worker，独立完成需求、架构、开发、调试和评估；重点解决长任务调用、人工修改保护和创作反馈复用。
           </p>
           <div class="tech-tags">
             <span>Node.js / JavaScript</span><span>Python Worker</span
@@ -376,63 +403,58 @@
             <li>版本交付</li>
             <li>人工修改与回归</li>
           </ol>
-          <div class="contributions">
-            <div>
-              <span class="item-number">01</span>
-              <h4>五个插件与十四个工具</h4>
-              <p>
-                实现 Project、Artifact、Memory、Cover、Video 插件与两份
-                Skill，按歌曲工作区注入状态、版本和偏好。插件直接提取用户歌词，校验路径、素材和参数，再将任务交给
-                Worker。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">02</span>
-              <h4>长任务与资源交接</h4>
-              <p>
-                用 DSH Jobs 编排 Python 媒体计算，回传 JSONL
-                进度，联合检查退出码与任务总结。等待回合结束后让出本地模型；通过运行时守卫解决
-                Agent 等结果、任务等回合结束的互等。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">03</span>
-              <h4>版本与人工成果保护</h4>
-              <p>
-                每次生成独立版本，交付时登记 SHA-256，拦截 DSH 的 write / edit
-                覆盖；监听文件变动并保存快照。偏好保留用户原话，经确认后生效，支持单曲优先、撤销和采用记录。
-              </p>
-            </div>
-            <div>
-              <span class="item-number">04</span>
-              <h4>以手改工程驱动评估</h4>
-              <p>
-                固定上游扒谱输入，逐音比较生成版与手改版；结合时间 /
-                音高匹配、独立参照、缺陷注入与跨歌回归，定位歌词漂移、八度误改和缓存失效，收窄或放弃会产生误改的规则。
-              </p>
-            </div>
+          <ul class="resume-points" aria-label="SV-Agent 主要工作">
+            <li>
+              <strong>领域工具与上下文：</strong>开发
+              Project、Artifact、Memory、Cover、Video 五个插件，注册 14
+              个工具与两份
+              Skill；按会话工作区识别歌曲，动态注入项目状态、最近版本和生效偏好。插件从用户消息直接提取歌词，并校验素材、路径和参数，减少模型转抄与自由拼命令造成的错误。
+            </li>
+            <li>
+              <strong>长任务执行与资源交接：</strong>复用 DSH
+              Jobs，将分离、扒谱、歌词对齐、节拍与工程生成封装为 Python
+              后台流水线；以 JSONL
+              回传进度，结合退出码和总结判定完成，失败保留产物供续跑。翻唱等待回合结束后卸载本地模型，并用运行时守卫解决
+              Agent 与 Worker 互相等待。
+            </li>
+            <li>
+              <strong>版本交付与手改保护：</strong
+              >采用递增版本目录，交付时登记文件大小与 SHA-256，拦截 DSH write /
+              edit
+              对已交付版本的覆盖；通过文件监听、指纹比较与快照保存人工修改，启动时补查停机期间变化，使后续生成与创作者调教分别留档。
+            </li>
+            <li>
+              <strong>可确认的偏好记忆：</strong
+              >区分单次反馈与长期偏好，保存原话、来源、确认先后和状态变更；支持单曲
+              /
+              全局范围、单曲优先及停用撤销。本次显式参数可以覆盖历史偏好，挑八度等已接入动作会记录实际采用的偏好，便于解释输出差异。
+            </li>
+            <li>
+              <strong>创作评估与规则迭代：</strong
+              >固定上游扒谱输入，对照手改工程逐音分析歌词、音高、起点和时长差异；以时间锚点与拼音差联合约束歌词落位，针对旧速度模板复用增加一致性检查。修复后检查目标歌曲及其他歌曲的误改，对不稳定规则收窄条件或放弃。
+            </li>
+            <li>
+              <strong>媒体交付验证：</strong
+              >将修订工程转为逐字字幕，估计混音与工程的整体时间偏移，生成视频和剪映草稿；结合工程读回、抽帧、人物遮挡与缺陷注入检查，验证产物和检查器，保留试听、混音与发布的人工交接。
+            </li>
+          </ul>
+          <div class="outcome">
+            <p class="mini-label">交付与验证</p>
+            <p>
+              标准翻唱与歌词视频已接入 DSH。10 月补充自检中，<strong
+                >Artifact 15/15、Memory 17/17 通过</strong
+              >；复盘记录工作流支持
+              <strong>8 个作品发布</strong
+              >，包含人工调教、混音、独立脚本与投稿。
+            </p>
+            <p class="outcome-note">
+              项目时间保留 2026.03–2026.09；10 月维护、自检与作品记录单列。DSH
+              提供 Agent Loop、Jobs 和界面，本人实现创作领域扩展。
+            </p>
           </div>
-          <div class="result-strip">
-            <div>
-              <strong>5 / 14 / 2</strong
-              ><span>领域插件 / 自定义工具 / Skill</span>
-            </div>
-            <div>
-              <strong>15 + 17</strong><span>Artifact 与 Memory 自检通过项</span>
-            </div>
-            <div>
-              <strong>8 <small>个</small></strong
-              ><span>复盘记录的发布作品</span>
-            </div>
-          </div>
-          <p class="evidence-note">
-            自检为 2026-10-11 macOS
-            指定场景；作品包含人工修改、混音和独立脚本。10
-            月维护与创作记录作为项目结束后的补充，不改变对外项目日期。
-          </p>
           <details class="case-detail">
             <summary>
-              <span>展开工具分工、修复案例与交付结果</span
+              <span>技术展开 · 长任务互等、人工修改保护与跨歌回归</span
               ><span class="detail-symbol" aria-hidden="true">+</span>
             </summary>
             <div class="detail-body">
@@ -456,35 +478,62 @@
               </div>
               <div class="case-stories">
                 <div>
-                  <p class="mini-label">歌词对齐</p>
-                  <h4>重复快句中的整段漂移</h4>
+                  <p class="mini-label">运行时约束</p>
+                  <h4>“不要等任务”需要落实到执行入口</h4>
                   <p>
-                    把 HubertFA 时间锚点与拼音差组合为单调
-                    DP，约束重复段落的歌词落位；修复后对原曲和其他手改歌曲做匹配与误改检查。
+                    翻唱任务需要等 turn/end 后让出模型，但 Agent 在同一回合调用
+                    job_output 等待结果，造成互等。
+                    在插件等待期拦截该会话的查询，回合结束后放行；假 Worker
+                    自检覆盖等待期拒绝、其他会话不受影响和结束后恢复。
                   </p>
                 </div>
                 <div>
-                  <p class="mini-label">缓存一致性</p>
-                  <h4>输入改了，旧模板却仍被复用</h4>
+                  <p class="mini-label">工程与人工协作</p>
+                  <h4>新生成另开版本，手改另存快照</h4>
                   <p>
-                    负 BPM
-                    修复后增加模板与当前速度表的一致性检查，不一致则保留旧模板并重建。续跑复用部分中间文件，完整依赖指纹仍待完善。
+                    创作软件会用内存工程覆盖磁盘文件，后台不直接修改已交付版本。
+                    seal 登记交付哈希，监听后续修改并保存快照；Artifact
+                    自检使用真实文件监听和快照内容比对。 守卫覆盖指定 DSH
+                    工具，外部进程写入依靠事后检测；超过 50 MB
+                    的文件只记录变动。
                   </p>
                 </div>
                 <div>
-                  <p class="mini-label">参数与偏好</p>
-                  <h4>八度规则需要保留创作者选择</h4>
+                  <p class="mini-label">评估驱动产品取舍</p>
+                  <h4>八度规则在新歌曲上出现误改</h4>
                   <p>
-                    将挑八度开关接入可确认偏好与交付记录。指定歌曲《调查中》原机记录八度差
-                    21 → 0、音高匹配 91% → 98%；结果限定于该歌曲与版本。
+                    六首测试中，规则修改 126 个音，独立音频裁判只支持其中 1
+                    次、支持原结果 80 次，另有 45 次无法判断。
+                    将开关接入单曲偏好和交付说明；《调查中》关闭该规则后，原机记录八度差
+                    21 → 0、音高匹配 91% → 98%。这一结果限于指定歌曲和版本。
                   </p>
                 </div>
                 <div>
-                  <p class="mini-label">验证检查器</p>
-                  <h4>区域检查与人物遮挡分别判定</h4>
+                  <p class="mini-label">固定输入回归</p>
+                  <h4>歌词修正需要检查其他歌曲是否退化</h4>
                   <p>
-                    《怪物》字幕原机记录遮挡段数 95 →
-                    0，并通过故意改坏排版进行缺陷注入。用不同参照检查实现，避免检查器与实现共享错误假设。
+                    重复快句仅靠字符匹配容易漂移，采用 HubertFA
+                    时间锚点与拼音差构建单调 DP。 后续 10
+                    月试验中，一律按行插值使《公主》匹配数 440 →
+                    435，因而收窄到异常远锚点与跨行长间隔。
+                    该后续修正属于本机未提交记录；目标曲局部改善与整首试听验收分别判断。
+                  </p>
+                </div>
+                <div>
+                  <p class="mini-label">缓存失效</p>
+                  <h4>速度表已修正，旧模板仍会被复用</h4>
+                  <p>
+                    段落重叠造成负
+                    BPM；修复速度表后，续跑仍按“文件存在”跳过模板生成。增加模板与当前速度表的一致性检查，不一致则挪开保留并重建，原机记录另复查十张速度表未变。该修复覆盖速度模板，其他中间产物的完整依赖指纹仍待补齐。
+                  </p>
+                </div>
+                <div>
+                  <p class="mini-label">检查器验证</p>
+                  <h4>用不同参照与缺陷注入核对字幕</h4>
+                  <p>
+                    《怪物》换底片后字幕遮挡人物，单看预设区域无法检出。按真实画面空白范围约束字幕外框，再独立检查人物遮挡，原机记录遮挡段数
+                    95 →
+                    0。故意改宽区域后，区域检查仍通过而人物检查报错，证明两条检查能发现不同问题。
                   </p>
                 </div>
               </div>
@@ -510,7 +559,7 @@
               <p class="eyebrow">02 / EXPERIENCE</p>
               <h2 id="experience-title">工作与实习</h2>
             </div>
-            <p>对话运行链路与领域训练数据，<br>从状态到质量逐层检查。</p>
+            <p>参与团队研发与领域数据建设，<br />明确具体工作和验证范围。</p>
           </div>
           <article class="case" id="cybereros" aria-labelledby="cyber-title">
             <header class="case-header">
@@ -520,7 +569,9 @@
                   ><span class="badge">兼职 · 小规模试用 / 灰度测试</span>
                 </div>
                 <h3 id="cyber-title">
-                  CyberEros-AI<span>对话 Agent Harness 与记忆后端</span>
+                  CyberEros-AI<span
+                    >AI 伴侣产品 · 长期记忆、上下文与对话后端</span
+                  >
                 </h3>
                 <p class="role">
                   SDE（软件开发工程师，兼职）<span>2026.05 - 2026.09</span>
@@ -528,9 +579,10 @@
               </div>
             </header>
             <p class="case-intro">
-              参与 AI 伴侣产品的 Agent Harness
-              与对话后端开发，与团队协作推进上下文与 Skill
-              装配、持久记忆工作流、可靠回复交付及记忆评测。产品处于小规模试用和灰度测试阶段，尚未正式上线。
+              产品提供 Web 与桌面端 AI
+              伴侣交互，需要在长会话中延续用户事实、偏好和共同经历，并在异步处理失败或模型波动时保持对话状态一致。
+              以兼职 SDE 身份参与 Agent Harness
+              与后端研发，和团队共同推进上下文装配、持久记忆、流式回复交付及分层评测；产品处于小规模试用与灰度测试阶段。
             </p>
             <div class="tech-tags">
               <span>Go</span><span>PostgreSQL / pgvector</span
@@ -544,97 +596,98 @@
               <li>向量投影</li>
               <li>召回与上下文</li>
             </ol>
-            <div class="contributions">
-              <div>
-                <span class="item-number">01</span>
-                <h4>上下文工程与 Skill 路由</h4>
-                <p>
-                  参与按场景、能力与召回意图装配输入，融合词法 /
-                  向量候选及来源证据；通过分区预算、待应用原文保护和回执，将角色化历史、背景数据与当前问题接入模型请求。
-                </p>
-              </div>
-              <div>
-                <span class="item-number">02</span>
-                <h4>持久记忆与异步恢复</h4>
-                <p>
-                  参与以事务 Outbox、租约队列和 Temporal
-                  分离推理与应用。保留短回答的前置问题语境，校验原文证据，保存版本化推理快照、记忆修订和
-                  applied_at，再衔接向量投影。
-                </p>
-              </div>
-              <div>
-                <span class="item-number">03</span>
-                <h4>后端与可靠流式交付</h4>
-                <p>
-                  参与 Go API 与
-                  SSE，事务内提交助手消息、实时事件、记忆任务和完成状态；结合幂等键、响应版本、执行租约及完成回放处理重试，通过首字前备用切换和分段日志诊断模型故障。
-                </p>
-              </div>
-              <div>
-                <span class="item-number">04</span>
-                <h4>分层评测与 Bad Case</h4>
-                <p>
-                  参与提取、召回、持久生命周期和长记忆问答评测。围绕 Recall /
-                  Precision、MRR、证据、纠错、误写和拒答固定数据 / 模型 / Prompt
-                  版本，结合规则、语义匹配与 Judge 定位和回归。
-                </p>
-              </div>
+            <ul class="resume-points" aria-label="CyberEros 参与工作">
+              <li>
+                <strong>场景化上下文与记忆召回：</strong
+                >参与根据交互场景、宿主能力和查询意图选择 Skill
+                与召回深度，组合置顶、近期、词法和 pgvector 语义候选，以 RRF
+                合并排名。语义召回共享 1.2
+                秒超时预算并设降级路径；按分区预算组装背景、原生角色历史和当前输入，记录命中、遗漏及停止原因。
+              </li>
+              <li>
+                <strong>长会话信息连续性：</strong
+                >参与近期原文与长期记忆的衔接：为重要短回答附带前置问题语境，事实证据仍限定在用户原文；根据业务记忆是否已应用保护待处理问答，使保护标记穿过历史裁剪与最终装配，减少异步记忆未就绪时的输入断档。
+              </li>
+              <li>
+                <strong>持久记忆与异步恢复：</strong>参与“消息 /
+                Outbox—来源事件—推理快照—业务应用—向量投影”链路，以 PostgreSQL
+                事务、租约队列和 Temporal
+                分离派发、推理与应用；结合来源校验、记忆修订、版本化快照和幂等约束组织重试，并分别跟踪派发、applied_at
+                与向量就绪状态。
+              </li>
+              <li>
+                <strong>对话后端与流式交付：</strong>参与 Go API、响应运行状态及
+                SSE
+                链路；通过消息幂等键、响应版本与数据库租约处理重复请求和并发执行，在同一事务内提交助手回复、实时事件、记忆任务与完成状态。模型首个增量前可按剩余预算切换备用，已输出后失败则停止，避免拼接不同生成。
+              </li>
+              <li>
+                <strong>分层评测与问题定位：</strong
+                >参与提取、召回、持久生命周期及长记忆问答评测，分别检查遗漏、误写、纠错、来源和最终回答；固定数据、模型与
+                Prompt 版本，结合规则、语义匹配和回答 Judge
+                维护回归。以消息、事件、召回回执和分段日志定位后台积压、输入裁剪及模型使用证据的问题。
+              </li>
+            </ul>
+            <div class="outcome">
+              <p class="mini-label">团队评测记录</p>
+              <p>
+                13 题与 24 题两套结构召回集的
+                <strong>Recall@5 均为 100%</strong>（8/8、17/17），口语集
+                <strong>Precision 94.4%</strong>（17/18）、MRR
+                1.0；用于固定题库的质量回归。
+              </p>
+              <p class="outcome-note">
+                内存仓储与结构检索条件，每套模拟 180 天并含 540
+                条噪声；这些结果衡量召回回归，不代表真实模型回答准确率或在线延迟。产品尚未正式上线。
+              </p>
             </div>
-            <div class="result-strip">
-              <div>
-                <strong>13 / 24 <small>题</small></strong
-                ><span>两套结构召回回归集</span>
-              </div>
-              <div>
-                <strong>100%</strong><span>固定题库 Recall@5：8/8、17/17</span>
-              </div>
-              <div>
-                <strong>94.4%</strong><span>口语题库 Precision：17/18</span>
-              </div>
-            </div>
-            <p class="evidence-note">
-              团队材料记录的内存仓储 / 结构检索成绩，两套集均模拟 180 天并含 540
-              条噪声，MRR 均为
-              1.0。结果用于固定题库回归；真实模型回答与线上延迟另行评估。
-            </p>
             <details class="case-detail">
               <summary>
-                <span>展开记忆连续性、后端诊断与评测边界</span
+                <span>技术展开 · 短回答如何进入长期记忆，如何定位信息丢失</span
                 ><span class="detail-symbol" aria-hidden="true">+</span>
               </summary>
               <div class="detail-body">
                 <div class="case-stories">
                   <div>
-                    <p class="mini-label">上下文衔接 · 技术机制</p>
-                    <h4>短回答需要保留前置问题</h4>
+                    <p class="mini-label">主要技术案例 · 测试场景</p>
+                    <h4>用户说过“蓝色”，下一轮却可能缺少依据</h4>
                     <p>
-                      “蓝色”依赖“你喜欢什么颜色？”解释。SourceContext
-                      保留问句，证据限定为用户原文；长期记忆应用前保护问答，让保护标记穿过历史窗口和二次装配，进入原生
-                      History。
+                      短回答需要前置问题才能表达完整偏好。若问答移出近期窗口、异步记忆又未应用，就会出现信息交接空档。
+                      写入侧保留
+                      SourceContext，模型漏抽时对符合条件的关键短回答提供原话兜底；读取侧根据
+                      pending 状态保护问答，直到最终原生 History 装配。
+                      拒记、含糊回答和跨可见性问题不进入这条兜底。
                     </p>
                   </div>
                   <div>
                     <p class="mini-label">恢复检查点</p>
-                    <h4>派发、应用、向量就绪分别检查</h4>
+                    <h4>快照固定推理结果，幂等约束重复应用</h4>
                     <p>
-                      推理先落版本化快照，再 Apply 业务记忆，完成后写
-                      applied_at。快照复用推理结果，幂等约束重复应用；向量是后续投影，不能把已派发当作可召回。
+                      Infer 按事件、作用域与提取版本保存快照，Apply
+                      再校验证据并写入记忆修订，完成后更新 applied_at。
+                      应用重试复用快照；纠正事实时关闭旧修订、保留新值与证据。向量投影在业务应用之后异步完成，因此派发、业务可读和语义可检索分别检查。
                     </p>
                   </div>
                   <div>
-                    <p class="mini-label">模型故障</p>
-                    <h4>是否已输出，决定能否切备用</h4>
+                    <p class="mini-label">上下文可诊断性</p>
+                    <h4>召回到了，还要确认最终输入保留下来</h4>
                     <p>
-                      主模型尚未输出且预算允许时切备用；交付增量后失败不自动从头重播。请求幂等与数据库租约约束执行资格和结果提交，模型调用放在回复事务之外。
+                      沿“来源事件—记忆应用—检索计划—候选与回执—最终请求—回答”逐层核对。
+                      Instructions 放规则与背景，History 保留用户 /
+                      助手原文，Input
+                      放当前问题；检查完整请求预算，避免第一次召回命中、二次装配又丢失。
+                      Recall Receipt
+                      记录检索选择，最终输入与答案正确性另行验证。
                     </p>
                   </div>
                   <div>
                     <p class="mini-label">后台诊断</p>
-                    <h4>API 可用，后台也可能停滞</h4>
+                    <h4>没有报错，也可能没有后台消费</h4>
                     <p>
-                      历史记录包含 495 条 Outbox 积压和 3 个 Worker
-                      未启动。排查沿队列认领、Temporal Activity、applied_at
-                      和投影展开，以状态和消费进度检查后台链路。
+                      团队历史记录中，API 可回答，但 3 个 worker 未启动；495 条
+                      Outbox 积压，尝试数和错误数均为 0。 这类问题需要检查最老
+                      pending、领取与派发、Temporal
+                      Activity、业务应用和向量投影，不能只依赖健康接口或错误数。
+                      参与后端诊断时，以消费进度和分段状态区分未启动、执行失败和应用未完成。
                     </p>
                   </div>
                 </div>
@@ -673,7 +726,7 @@
                       <tr>
                         <th scope="row">后端恢复</th>
                         <td>251 条助手消息按备份恢复</td>
-                        <td>历史本机记录，与团队协作参与</td>
+                        <td>团队历史本机记录；未归为个人独立修复数量</td>
                       </tr>
                       <tr>
                         <th scope="row">CI / 部署</th>
@@ -709,78 +762,74 @@
               </div>
             </header>
             <p class="case-intro">
-              参与灵云基座大模型水务客服场景的 SFT / DPO 数据集构建。原始输入为
-              CSV、TXT 等格式的多轮对话数据，保留 A / B
-              交替发言的上下文结构；工作主题聚焦 AI
-              数据工程、模型生成工作流与评估。
+              在灵云基座大模型的水务客服业务中，参与 SFT / DPO 数据集构建。
+              原始材料包括 CSV、TXT 格式的多轮对话，以 A / B
+              交替发言组织；工作方向为领域训练数据建设，支持模型学习客服示范与回答偏好。
             </p>
             <div class="tech-tags">
               <span>SFT 数据</span><span>DPO 偏好对</span><span>多轮对话</span
               ><span>CSV / TXT</span><span>数据质量</span>
             </div>
-            <div class="internship-summary">
-              <div>
-                <p class="mini-label">业务方向</p>
-                <h4>水务客服领域数据</h4>
-                <p>
-                  围绕领域问答与对话上下文组织训练数据，关注示范回答、偏好依据和评测用例之间的关系。
-                </p>
-              </div>
-              <div>
-                <p class="mini-label">数据形态</p>
-                <h4>从原始对话到训练样本</h4>
-                <p>
-                  以多轮原始数据为输入。SFT 示范与 DPO 的 chosen / rejected
-                  回答对采用不同构建与审核口径。
-                </p>
-              </div>
+            <div class="outcome compact-outcome">
+              <p class="mini-label">工作主题</p>
+              <p>
+                <strong>多轮对话 → 领域训练数据。</strong>SFT
+                面向合格回答示范，DPO 面向同一问题与上下文中的回答偏好。原始 A /
+                B 轮次与 chosen / rejected
+                是不同的数据关系，具体构建过程在下方方案中分别说明。
+              </p>
             </div>
             <details class="case-detail">
               <summary>
-                <span>展开五个技术模块 · 候选说明</span
+                <span>技术方案参考 · 五个模块，实际参与细节待核实</span
                 ><span class="detail-symbol" aria-hidden="true">+</span>
               </summary>
               <div class="detail-body">
                 <p class="detail-note">
-                  以下为最新版参考材料中的技术候选展开，具体模块的实际承担尚待逐项核实。参考文件中的合格率、数据条数和工时数字属于模拟，未作为实习成绩展示。
+                  最新权威文件将以下内容列为候选方案，具体实现与个人承担尚未逐项核实；这里作为方案参考展示。模拟数据规模、合格率与工时未列入实际成绩，模型训练和调参也未列为已确认职责。
                 </p>
                 <ol class="module-list">
                   <li>
-                    <h4>模型生成工作流</h4>
+                    <h4>模型辅助生成与批处理</h4>
                     <p>
-                      以 Python 串联对话整理、生成 / 评审
-                      Prompt、模型调用、偏好配对、规则质检与导出，记录批次进度、失败原因和版本，支持有限重跑。
+                      用 Python 串联 CSV / TXT 解析、会话整理、生成 / 评审
+                      Prompt、模型调用、规则质检和版本导出。 先确认 A / B
+                      角色与会话边界，再处理清洗、脱敏、去重和分类；记录批次进度与失败原因，对可修复错误有限重跑，争议样本进入业务复核。
                     </p>
                   </li>
                   <li>
-                    <h4>知识与上下文</h4>
+                    <h4>业务依据与生成上下文</h4>
                     <p>
-                      按场景与适用条件组织业务依据、历史对话和缺失信息；保留来源，约束无依据断言，确保
-                      DPO 两个回答共享同一问题及上下文。
+                      按场景、资料版本和适用条件组织
+                      FAQ、办理规则及对话历史，保留引用与缺失条件。
+                      生成时约束无依据的账户状态或业务承诺；构建 DPO
+                      时让两个回答共享完整上下文，避免因已知条件不同而产生无效偏好。
                     </p>
                   </li>
                   <li>
-                    <h4>多维度评估</h4>
+                    <h4>规则、模型评审与人工复核</h4>
                     <p>
-                      结合结构规则、LLM-as-Judge
-                      和业务复核，检查格式、事实、条件、偏好有效性与人工一致性；固定条件比较数据、Prompt
-                      和模型输出版本。
+                      规则检查格式、轮次、来源分组与偏好对有效性；LLM-as-Judge
+                      辅助比较表达、完整性和偏好，业务人员核对事实与争议。
+                      固定评分标准，交换回答顺序检查位置偏差，并以独立样本校准人工一致性；数据合格率与模型回答正确率分别统计。
                     </p>
                   </li>
                   <li>
-                    <h4>评估记录采集</h4>
+                    <h4>评估采集与 Bad Case 回归</h4>
                     <p>
-                      关联样本编号、来源、模型 / Prompt /
-                      数据版本、评分理由、错误类别及耗时，形成 Bad Case
-                      归因、数据或 Prompt 修订和回归报告。
+                      关联样本编号、输入输出、来源、模型 / Prompt /
+                      数据版本、评分理由和错误类别，定位事实缺失、条件遗漏或偏好冲突。
+                      修改数据或 Prompt
+                      后重跑开发回归集，保留逐题差异和计数；参与过修复的坏例不再当作未见测试样本。
                     </p>
                   </li>
                   <li>
-                    <h4>标准用例与偏好数据</h4>
+                    <h4>标准用例、偏好对与来源隔离</h4>
                     <p>
-                      从业务审核的 GT 对话提取条件并填充
-                      schema，扩展问法和边界场景；记录 chosen / rejected
-                      依据，按来源组管理训练与评测隔离。
+                      将业务审核后的 GT 对话通过语义提取与 schema
+                      填充转为标准用例，扩展同义问法、多轮补充和信息不足场景。
+                      在相同 prompt 下形成 chosen / rejected
+                      并记录判定理由；同一原始会话及其改写、偏好衍生样本按来源组隔离训练、验证和测试。
                     </p>
                   </li>
                 </ol>
@@ -832,7 +881,7 @@
             <p class="mini-label">RESEARCH</p>
             <h4>清华大学 · 曹军威课题组</h4>
             <p>
-              北京信息科学与技术国家研究中心 · 科研助理<br>大数据时序预测 ·
+              北京信息科学与技术国家研究中心 · 科研助理<br />大数据时序预测 ·
               2024.08 - 2024.11
             </p>
           </div>
@@ -853,39 +902,42 @@
             <p class="eyebrow">04 / ENGINEERING TOOLKIT</p>
             <h2 id="skills-title">工程能力</h2>
           </div>
-          <p>围绕具体链路使用技术，<br>从实现到验证闭环。</p>
+          <p>对应上述项目与工作中的<br />主要开发实践。</p>
         </div>
         <div class="skills-grid">
           <div>
             <span class="mono">01 / DEVELOPMENT</span>
             <h3>编程与应用开发</h3>
             <p>
-              Go、Python、JavaScript /
-              Node.js、TypeScript、React；API、领域插件与媒体 Worker。
+              Python 数据处理与 Worker、JavaScript / Node.js 领域插件、Go
+              服务端、React / TypeScript 工作台；围绕
+              API、工具契约和状态组织应用。
             </p>
           </div>
           <div>
             <span class="mono">02 / AGENT HARNESS</span>
             <h3>上下文与工具执行</h3>
             <p>
-              Context Assembly、Skill 路由、只读工具、JSON
-              Schema、证据约束、有界修复与人工交接。
+              场景化上下文、词法 / 向量召回、Skill 与工具约束；使用 Deep
+              Agents、LangGraph、DSH 扩展任务执行，以
+              Schema、证据校验与有限修复约束输出。
             </p>
           </div>
           <div>
             <span class="mono">03 / RELIABILITY</span>
             <h3>状态与后端可靠性</h3>
             <p>
-              PostgreSQL / pgvector、Transactional
-              Outbox、Temporal、幂等键、租约、SSE、版本与快照。
+              PostgreSQL / pgvector、事务 Outbox、Temporal、幂等恢复、租约与
+              SSE；本地任务使用版本哈希、文件快照、进度与结果检查保护交付。
             </p>
           </div>
           <div>
             <span class="mono">04 / EVALUATION</span>
             <h3>数据质量与评估迭代</h3>
             <p>
-              召回评测、规则与语义判定、Bad Case、缺陷注入、固定输入回归；SFT /
-              DPO 数据构建。
+              Recall / Precision / MRR、结构规则、语义匹配与回答
+              Judge；固定输入、版本与参考进行 Bad Case
+              分析、缺陷注入及回归；具备 SFT / DPO 数据构建经历。
             </p>
           </div>
         </div>
@@ -895,7 +947,7 @@
           <div class="contact-top">
             <div>
               <p class="eyebrow">LET'S CONNECT</p>
-              <h2>聊聊 AI 应用，<br>与下一段工作。</h2>
+              <h2>聊聊 AI 应用，<br />与下一段工作。</h2>
             </div>
             <a class="contact-email" href="mailto:zouyichen2012@outlook.com"
               >zouyichen2012@outlook.com <span aria-hidden="true">↗</span></a

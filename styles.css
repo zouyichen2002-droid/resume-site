@@ -519,6 +519,58 @@ h1 {
   color: #95a499;
   font-weight: 400;
 }
+.resume-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 28px;
+  counter-reset: responsibility;
+}
+.resume-points li {
+  counter-increment: responsibility;
+  position: relative;
+  padding: 0 0 0 32px;
+  font-size: 0.88rem;
+  line-height: 1.95;
+  color: #53605a;
+  overflow-wrap: anywhere;
+}
+.resume-points li + li {
+  margin-top: 17px;
+}
+.resume-points li::before {
+  content: counter(responsibility, decimal-leading-zero);
+  position: absolute;
+  top: 4px;
+  left: 0;
+  color: var(--gold);
+  font-family: monospace;
+  font-size: 0.66rem;
+}
+.resume-points strong {
+  color: var(--ink);
+  font-weight: 650;
+}
+.outcome {
+  margin: 0 0 28px;
+  padding: 20px 24px;
+  background: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  font-size: 0.85rem;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+.outcome strong {
+  color: var(--accent);
+  font-weight: 650;
+}
+.outcome .outcome-note {
+  margin-top: 9px;
+  font-size: 0.73rem;
+  color: var(--muted);
+}
+.compact-outcome {
+  margin-top: 26px;
+}
 .contributions {
   display: grid;
   grid-template-columns: 1fr 1fr;
