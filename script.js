@@ -1,37 +1,28 @@
-const tabs = document.querySelectorAll(".tab");
-const cards = document.querySelectorAll(".project-card");
-const navLinks = document.querySelectorAll(".nav a");
-const sections = [...navLinks]
+const navLinks = [...document.querySelectorAll(".nav a")];
+const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
+sections.unshift(document.querySelector("#top"));
 
-tabs.forEach((tab) => {
-  tab.setAttribute("aria-selected", tab.classList.contains("is-active") ? "true" : "false");
-
-  tab.addEventListener("click", () => {
-    const filter = tab.dataset.filter;
-    tabs.forEach((item) => {
-      const isActive = item === tab;
-      item.classList.toggle("is-active", isActive);
-      item.setAttribute("aria-selected", isActive ? "true" : "false");
-    });
-    cards.forEach((card) => {
-      const tags = card.dataset.tags.split(" ");
-      card.classList.toggle("is-hidden", filter !== "all" && !tags.includes(filter));
-    });
-  });
-});
-
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) return;
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
+      if (!visible.length) return;
+      const activeID = visible[0].target.id;
       navLinks.forEach((link) => {
-        link.classList.toggle("is-active", link.getAttribute("href") === `#${entry.target.id}`);
+        if (link.getAttribute("href") === `#${activeID}`)
+          link.setAttribute("aria-current", "location");
+        else link.removeAttribute("aria-current");
       });
-    });
-  },
-  { rootMargin: "-35% 0px -55% 0px", threshold: 0.01 },
-);
+    },
+    { rootMargin: "-15% 0px -65% 0px", threshold: 0 },
+  );
+  sections.forEach((section) => observer.observe(section));
+}
 
-sections.forEach((section) => observer.observe(section));
+document
+  .querySelector(".print-button")
+  ?.addEventListener("click", () => window.print());
